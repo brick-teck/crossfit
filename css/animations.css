@@ -1,0 +1,62 @@
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes hero-enter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.marquee-track {
+  animation: marquee 42s linear infinite;
+}
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+.hero-content > * {
+  animation: hero-enter 0.8s both;
+}
+.hero-content > h1 {
+  animation-delay: 0.12s;
+}
+.hero-content > .hero-copy {
+  animation-delay: 0.22s;
+}
+.hero-content > .button-group {
+  animation-delay: 0.3s;
+}
+.motion-enabled .reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity 0.65s,
+    transform 0.65s;
+}
+.motion-enabled .reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .motion-enabled .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  .wod-board {
+    transform: none;
+  }
+}

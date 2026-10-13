@@ -1,0 +1,994 @@
+@media (min-width: 1700px) {
+  .container {
+    max-width: 1440px;
+  }
+  .hero-content {
+    padding-top: 100px;
+  }
+  h1 {
+    font-size: 116px;
+  }
+  .hero-image {
+    width: 64%;
+  }
+  .nav {
+    gap: 32px;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    width: calc(100% - 72px);
+  }
+  .nav {
+    gap: 16px;
+  }
+  .header-inner {
+    gap: 17px;
+  }
+  .brand {
+    font-size: 24px;
+  }
+  .header-cta {
+    font-size: 10px;
+    padding-inline: 13px;
+    gap: 10px;
+  }
+  .split-section,
+  .about-grid,
+  .wod-grid,
+  .location-grid {
+    gap: 55px;
+  }
+  .hero-tags {
+    gap: 19px;
+  }
+  .hero-demo {
+    display: none;
+  }
+  .price-value {
+    font-size: 40px;
+  }
+  .plan-card {
+    padding-inline: 24px;
+  }
+  .coach-photo {
+    height: 290px;
+  }
+}
+@media (max-width: 1050px) {
+  .header-inner {
+    height: 78px;
+  }
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    width: 42px;
+    height: 42px;
+    background: none;
+    border: 1px solid #ffffff55;
+  }
+  .menu-toggle span {
+    width: 20px;
+    height: 1px;
+    background: var(--text);
+    transition: transform 0.2s;
+  }
+  .menu-toggle[aria-expanded="true"] span:first-child {
+    transform: translateY(4px) rotate(45deg);
+  }
+  .menu-toggle[aria-expanded="true"] span:last-child {
+    transform: translateY(-4px) rotate(-45deg);
+  }
+  .nav {
+    display: none;
+    position: absolute;
+    top: 78px;
+    left: 0;
+    right: 0;
+    background: #101010;
+    border-bottom: 1px solid #444;
+    padding: 24px 36px;
+    max-height: calc(100dvh - 78px);
+    overflow: auto;
+  }
+  .nav.open {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .nav a {
+    padding: 11px 0;
+    font-size: 15px;
+  }
+  .header-cta {
+    margin-left: auto;
+    font-size: 11px;
+  }
+  .hero {
+    min-height: 810px;
+    max-height: 1000px;
+  }
+  .hero-content {
+    padding-top: 100px;
+  }
+  .hero-image {
+    width: 75%;
+    object-position: 50% 58%;
+  }
+  .hero-side {
+    display: none;
+  }
+  .hero h1 {
+    font-size: 88px;
+  }
+  .section {
+    padding-block: 88px;
+  }
+  .modalities-grid {
+    gap: 20px;
+  }
+  .card-body {
+    padding: 23px;
+  }
+  .card-title h3 {
+    font-size: 24px;
+  }
+  .card-photo {
+    height: 200px;
+  }
+  .trial-image {
+    height: 520px;
+    margin-left: 15px;
+  }
+  .trial-image figcaption {
+    left: -15px;
+    padding: 22px;
+  }
+  .about-image {
+    height: 520px;
+  }
+  .coaches-grid {
+    gap: 18px;
+  }
+  .coach-photo {
+    height: 270px;
+  }
+  .coach-details h3 {
+    font-size: 20px;
+  }
+  .price-value {
+    font-size: 36px;
+  }
+  .price {
+    gap: 5px;
+  }
+  .plan-card {
+    padding: 35px 22px 25px;
+  }
+  .faq-section {
+    gap: 65px;
+  }
+  .gallery-grid {
+    grid-auto-rows: 200px;
+  }
+  .schedule-row,
+  .schedule-head {
+    padding-inline: 25px;
+  }
+  .board-timer {
+    font-size: 72px;
+  }
+  .wod-board {
+    padding: 28px;
+  }
+  .footer-grid {
+    gap: 28px;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    width: calc(100% - 48px);
+  }
+  h2 {
+    font-size: 43px;
+  }
+  .hero {
+    min-height: 820px;
+    height: 100svh;
+  }
+  .hero h1 {
+    font-size: 82px;
+  }
+  .hero-image {
+    width: 90%;
+    right: -15%;
+    opacity: 0.75;
+  }
+  .hero-shade {
+    background:
+      linear-gradient(90deg, #090909f5 5%, #090909b0 55%, #09090940),
+      linear-gradient(0deg, #090909 0%, transparent 55%);
+  }
+  .hero-content {
+    padding-block: 110px 105px;
+  }
+  .hero-tags {
+    gap: 18px;
+    font-size: 9px;
+  }
+  .hero-tags span:last-child {
+    display: none;
+  }
+  .split-section,
+  .about-grid,
+  .wod-grid,
+  .location-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+  .section-copy > p:not(.eyebrow),
+  .about-copy > p:not(.eyebrow),
+  .wod-copy > p:not(.eyebrow) {
+    max-width: 600px;
+  }
+  .trial-image {
+    height: 550px;
+    margin: 0 15px;
+  }
+  .trial-image > img {
+    object-position: 50% 45%;
+  }
+  .about-image {
+    height: 490px;
+    order: 2;
+  }
+  .about-copy {
+    order: 1;
+  }
+  .about-values {
+    max-width: 520px;
+  }
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 35px;
+  }
+  .section-heading > p {
+    max-width: none;
+  }
+  .modalities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card-photo {
+    height: 245px;
+  }
+  .schedule-head,
+  .schedule-row {
+    grid-template-columns: 0.65fr 1.25fr 0.65fr 1fr;
+    gap: 10px;
+    padding-inline: 20px;
+  }
+  .schedule-type {
+    font-size: 16px;
+    gap: 7px;
+  }
+  .schedule-coach {
+    font-size: 11px;
+  }
+  .schedule-status {
+    font-size: 9px;
+  }
+  .schedule-time {
+    font-size: 25px;
+  }
+  .schedule-bottom {
+    padding: 20px;
+    align-items: flex-start;
+  }
+  .schedule-bottom p {
+    max-width: 330px;
+  }
+  .day-tabs button {
+    font-size: 13px;
+    min-height: 58px;
+  }
+  .plans-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    max-width: 540px;
+    margin: auto;
+  }
+  .plan-card {
+    padding: 34px;
+  }
+  .plan-card ul {
+    grid-template-columns: 1fr 1fr;
+    gap: 17px 22px;
+  }
+  .price-value {
+    font-size: 55px;
+  }
+  .price-unit {
+    font-size: 12px;
+  }
+  .plan-card li {
+    font-size: 12px;
+  }
+  .plan-card .button {
+    max-width: none;
+  }
+  .center-heading > p:not(.eyebrow) {
+    max-width: 520px;
+    margin: 20px auto 0;
+  }
+  .wod-board {
+    max-width: 570px;
+    width: calc(100% - 10px);
+    margin: auto;
+    padding: 35px;
+  }
+  .board-timer {
+    font-size: 90px;
+  }
+  .coaches-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 24px;
+  }
+  .coach-photo {
+    height: 390px;
+  }
+  .coach-details h3 {
+    font-size: 25px;
+  }
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 245px;
+  }
+  .gallery-item:first-child {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .gallery-item:nth-child(4) {
+    grid-column: span 1;
+  }
+  .events-grid {
+    gap: 18px;
+  }
+  .event-photo {
+    height: 200px;
+  }
+  .event-card h3 {
+    font-size: 23px;
+  }
+  .event-card p {
+    font-size: 11px;
+  }
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .testimonial blockquote {
+    min-height: 0;
+  }
+  .location-grid {
+    gap: 45px;
+  }
+  .map-area {
+    height: 420px;
+  }
+  .faq-section {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .faq-intro h2 br {
+    display: none;
+  }
+  .faq-intro h2 em {
+    margin-left: 8px;
+  }
+  .footer-grid {
+    grid-template-columns: 1.3fr 1fr;
+    gap: 40px;
+  }
+  .footer-bottom {
+    flex-wrap: wrap;
+    font-size: 9px;
+  }
+  .footer-bottom p {
+    order: 3;
+    flex-basis: 100%;
+    max-width: none;
+  }
+  .final-content h2 {
+    font-size: 45px;
+  }
+}
+@media (max-width: 550px) {
+  .container {
+    width: calc(100% - 40px);
+  }
+  body {
+    font-size: 14px;
+  }
+  .section {
+    padding-block: 65px;
+  }
+  h2 {
+    font-size: 38px;
+  }
+  .eyebrow {
+    font-size: 10px;
+    letter-spacing: 1.7px;
+    margin-bottom: 16px;
+  }
+  .header-inner {
+    height: 70px;
+    gap: 12px;
+  }
+  .brand {
+    font-size: 23px;
+    gap: 6px;
+  }
+  .brand-mark {
+    width: 24px;
+    height: 24px;
+  }
+  .header-cta {
+    display: none;
+  }
+  .menu-toggle {
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+  }
+  .nav {
+    top: 70px;
+    padding: 20px;
+    max-height: calc(100dvh - 70px);
+  }
+  .nav a {
+    padding: 10px 0;
+  }
+  .hero {
+    height: auto;
+    min-height: max(790px, 100svh);
+    max-height: none;
+    align-items: flex-start;
+  }
+  .hero-content {
+    padding-top: 146px;
+    padding-bottom: 140px;
+  }
+  .hero-image {
+    width: 130%;
+    right: -37%;
+    object-position: 50% 57%;
+    opacity: 0.72;
+  }
+  .hero-shade {
+    background:
+      linear-gradient(90deg, #090909d9 0%, #09090999 60%, #09090933),
+      linear-gradient(0deg, #090909 4%, #09090905 55%, #09090999);
+  }
+  .hero-eyebrow {
+    font-size: 8px;
+    letter-spacing: 1.5px;
+    gap: 8px;
+  }
+  .tiny-line {
+    width: 17px;
+  }
+  .hero h1 {
+    font-size: clamp(53px, 12.7vw, 72px);
+    line-height: 1.045;
+  }
+  .hero h1 > span {
+    font-size: 0.91em;
+    margin-top: 10px;
+  }
+  .hero-copy {
+    font-size: 12px;
+    line-height: 1.9;
+    max-width: 320px;
+    margin-top: 24px;
+  }
+  .hero .button-group {
+    margin-top: 25px;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 335px;
+  }
+  .hero .button {
+    min-height: 52px;
+    font-size: 11px;
+    padding: 15px 18px;
+    justify-content: space-between;
+  }
+  .hero-bottom {
+    bottom: 23px;
+    padding-top: 17px;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .hero-tags {
+    display: block;
+    font-size: 8px;
+    line-height: 1.7;
+    text-align: right;
+  }
+  .hero-tags span {
+    display: block;
+  }
+  .hero-tags span:nth-child(2) {
+    display: none;
+  }
+  .scroll-cue {
+    font-size: 8px;
+    gap: 7px;
+  }
+  .marquee {
+    padding: 12px 0;
+  }
+  .marquee-track > span {
+    font-size: 18px;
+    gap: 27px;
+    padding-right: 27px;
+    letter-spacing: 1px;
+  }
+  .marquee b {
+    font-size: 17px;
+  }
+  .split-section {
+    gap: 38px;
+  }
+  .section-copy > p:not(.eyebrow),
+  .about-copy > p:not(.eyebrow),
+  .wod-copy > p:not(.eyebrow) {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  .benefits {
+    font-size: 12px;
+    gap: 11px;
+    margin: 25px 0;
+  }
+  .section-copy .button {
+    font-size: 12px;
+    padding: 16px 19px;
+    gap: 16px;
+  }
+  .trial-image {
+    height: 425px;
+    margin: 0 10px;
+  }
+  .trial-image:before {
+    inset: -10px -10px 10px 10px;
+  }
+  .trial-image figcaption {
+    bottom: 25px;
+    left: -10px;
+    padding: 20px;
+    gap: 15px;
+  }
+  .trial-image figcaption strong {
+    font-size: 20px;
+  }
+  .caption-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+  .trial-image figcaption span:not(.caption-icon) {
+    font-size: 9px;
+  }
+  .image-label {
+    top: 15px;
+    left: 15px;
+    font-size: 7px;
+  }
+  .about-grid {
+    gap: 35px;
+  }
+  .about-image {
+    height: 390px;
+  }
+  .about-values {
+    gap: 20px;
+    margin: 25px 0;
+  }
+  .about-values h3 {
+    font-size: 15px;
+  }
+  .about-values p {
+    font-size: 10px;
+  }
+  .about-copy .text-link {
+    font-size: 11px;
+  }
+  .modalities-grid {
+    grid-template-columns: 1fr;
+    gap: 23px;
+  }
+  .card-photo {
+    height: 250px;
+  }
+  .card-body {
+    padding: 24px;
+  }
+  .card-title h3 {
+    font-size: 28px;
+  }
+  .card-body p {
+    min-height: 0;
+    font-size: 12px;
+    margin: 12px 0 18px;
+  }
+  .section-heading {
+    gap: 19px;
+    margin-bottom: 30px;
+  }
+  .section-heading > p,
+  .section-aside p {
+    font-size: 11px;
+  }
+  .day-tabs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .day-tabs button:nth-child(-n + 3) {
+    border-bottom: 1px solid #343434;
+  }
+  .day-tabs button:nth-child(3) {
+    border-right: 0;
+  }
+  .day-tabs button {
+    min-height: 48px;
+  }
+  .schedule-head {
+    display: none;
+  }
+  .schedule-row {
+    grid-template-columns: 70px 1fr;
+    gap: 0 14px;
+    padding: 18px 16px;
+    min-height: 109px;
+  }
+  .schedule-time {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    font-size: 26px;
+    align-self: center;
+    border-right: 1px solid #333;
+    padding-right: 10px;
+  }
+  .schedule-type {
+    grid-column: 2;
+    font-size: 18px;
+    gap: 8px;
+  }
+  .schedule-coach {
+    grid-column: 2;
+    font-size: 10px;
+  }
+  .schedule-coach:before {
+    content: "Coach: ";
+  }
+  .schedule-status {
+    grid-column: 2;
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px;
+    margin-top: 9px;
+  }
+  .schedule-status button {
+    width: 30px;
+    height: 30px;
+  }
+  .schedule-bottom {
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px 16px;
+  }
+  .schedule-bottom p {
+    align-items: flex-start;
+    font-size: 9px;
+  }
+  .schedule-bottom p svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .schedule-bottom .text-link {
+    font-size: 10px;
+  }
+  .status-label {
+    font-size: 10px;
+  }
+  .center-heading > p:not(.eyebrow) {
+    font-size: 11px;
+  }
+  .period-selector {
+    margin-bottom: 38px;
+    max-width: 100%;
+  }
+  .period-selector button {
+    padding: 10px 19px;
+    font-size: 11px;
+  }
+  .plan-card {
+    padding: 32px 25px 25px;
+  }
+  .plan-card h3 {
+    font-size: 28px;
+  }
+  .plan-card ul {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .price-value {
+    font-size: 50px;
+  }
+  .price-unit {
+    font-size: 11px;
+  }
+  .demo-note {
+    font-size: 9px;
+  }
+  .wod-grid {
+    gap: 35px;
+  }
+  .wod-board {
+    padding: 25px 22px;
+  }
+  .board-name {
+    font-size: 24px;
+  }
+  .board-timer {
+    font-size: 75px;
+    gap: 17px;
+  }
+  .board-timer span {
+    font-size: 19px;
+  }
+  .board-movements strong {
+    font-size: 23px;
+    min-width: 50px;
+  }
+  .board-movements span {
+    font-size: 17px;
+  }
+  .board-movements li {
+    gap: 15px;
+  }
+  .board-top {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+  .board-note {
+    font-size: 9px;
+  }
+  .coaches-grid {
+    gap: 22px 16px;
+  }
+  .coach-photo {
+    height: 255px;
+  }
+  .coach-details h3 {
+    font-size: 20px;
+  }
+  .coach-specialty {
+    font-size: 8px;
+    letter-spacing: 0.2px;
+    min-height: 25px;
+  }
+  .coach-details > p:not(.coach-specialty) {
+    font-size: 10px;
+  }
+  .coach-photo > span {
+    top: 10px;
+    left: 10px;
+    font-size: 7px;
+    padding: 4px 6px;
+  }
+  .coach-details {
+    padding: 16px 0;
+  }
+  .gallery-grid {
+    gap: 10px;
+    grid-auto-rows: 205px;
+  }
+  .gallery-item:first-child {
+    grid-row: span 1;
+  }
+  .gallery-item:nth-child(4) {
+    grid-column: span 2;
+  }
+  .gallery-title {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    font-size: 10px;
+  }
+  .events-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .event-photo {
+    height: 260px;
+  }
+  .event-card h3 {
+    font-size: 27px;
+  }
+  .event-card p {
+    font-size: 12px;
+  }
+  .testimonial {
+    padding: 25px;
+  }
+  .testimonial blockquote {
+    font-size: 12px;
+  }
+  .stars {
+    margin-bottom: 17px;
+  }
+  .map-area {
+    height: 345px;
+  }
+  .map-area > strong {
+    font-size: 23px;
+  }
+  .location-grid {
+    gap: 35px;
+  }
+  .location-grid .button {
+    font-size: 11px;
+    padding-inline: 18px;
+  }
+  .location-grid .button-group {
+    gap: 20px;
+  }
+  .location-grid .text-link {
+    font-size: 10px;
+  }
+  .faq-intro h2 br {
+    display: block;
+  }
+  .faq-intro h2 em {
+    margin-left: 0;
+  }
+  .faq-question {
+    font-size: 12px;
+    padding: 20px 0;
+    gap: 12px;
+  }
+  .faq-answer {
+    font-size: 11px;
+  }
+  .final-cta {
+    padding-block: 80px;
+  }
+  .final-content h2 {
+    font-size: 38px;
+    line-height: 1.16;
+  }
+  .final-content > p:not(.eyebrow) {
+    font-size: 12px;
+  }
+  .final-content .button-group {
+    flex-direction: column;
+    max-width: 345px;
+    margin: 28px auto 0;
+  }
+  .final-content .button {
+    font-size: 11px;
+    justify-content: space-between;
+    padding-inline: 20px;
+  }
+  .footer {
+    padding-top: 50px;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px 20px;
+  }
+  .footer-grid > div:first-child {
+    grid-column: span 2;
+  }
+  .footer-grid > div:last-child {
+    grid-column: span 2;
+  }
+  .footer-brand {
+    font-size: 36px;
+  }
+  .footer-grid h3 {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+  .footer-bottom {
+    margin-top: 30px;
+    gap: 15px;
+  }
+  .back-top {
+    right: 14px;
+    bottom: 14px;
+    width: 38px;
+    height: 38px;
+  }
+  .info-dialog {
+    padding: 40px 25px 28px;
+  }
+  .info-dialog h2 {
+    font-size: 33px;
+  }
+  .info-dialog .eyebrow {
+    font-size: 8px;
+  }
+  .lightbox {
+    padding: 15px;
+  }
+  .lightbox figure img {
+    height: 58dvh;
+  }
+  .lightbox figcaption {
+    font-size: 14px;
+  }
+  .lightbox-controls {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 360px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+  .hero {
+    min-height: 760px;
+  }
+  .hero-content {
+    padding-top: 132px;
+  }
+  .hero h1 {
+    font-size: 49px;
+  }
+  .hero-eyebrow {
+    font-size: 7px;
+    letter-spacing: 1.1px;
+  }
+  .hero-copy {
+    font-size: 11px;
+  }
+  .hero .button {
+    font-size: 10px;
+  }
+  .period-selector button {
+    padding-inline: 16px;
+  }
+  .coach-photo {
+    height: 225px;
+  }
+  .coach-details h3 {
+    font-size: 18px;
+  }
+  .board-timer {
+    font-size: 67px;
+  }
+  .board-movements span {
+    font-size: 15px;
+  }
+  .board-top {
+    font-size: 7px;
+  }
+  .trial-image {
+    height: 385px;
+  }
+  .card-photo {
+    height: 220px;
+  }
+  .gallery-grid {
+    grid-auto-rows: 180px;
+  }
+  .final-content h2 {
+    font-size: 34px;
+  }
+  .price-value {
+    font-size: 43px;
+  }
+}
